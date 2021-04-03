@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+
+body{
+    background-color: whitesmoke;
+}
+
+span{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Do Hyeon', sans-serif;
+    
+    background: linear-gradient(to right top,#12c2e9,#c471ed,#f64f59);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    border: 1px solid rgb(184, 181, 181);
+    border-radius: 20px;
+}
+
+.cardbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    
+}
+
+.col{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+p{
+    font-family: 'Sunflower', sans-serif;
+}
+
+.fa-apple{
+    background: linear-gradient(to right top,#12c2e9,#c471ed,#f64f59);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.fa-tablet-alt{
+    color: #afb1b4;
+}
+.fa-mobile-alt{
+    color: #cde0ca;
+}
+
+.fa-thumbs-up{
+    color: navy;
+}
