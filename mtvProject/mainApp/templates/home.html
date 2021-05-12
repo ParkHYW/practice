@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+   
+    <style>
+        
+        body{
+            background-color: whitesmoke;
+        }
+        h1{
+            text-align: center;
+            text-shadow: 1px 1px 2px rgb(2, 2, 97);
+        }
+        h3,p{
+            text-align: center;
+        }
+        h3{
+            text-shadow: 0.5px 0.5px 0.5px rgb(2, 2, 97);
+        }
+
+        p{
+            font-weight: 700;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .container__box{
+
+            width: 300px;
+            height: 40vh;
+            border: 2px solid rgb(99, 98, 98);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Team Project</h1>
+
+    <div class="container">
+        {% for team in teams %}
+            <div class="container__box">
+                <h3>😃{{team.name}}😃</h3>
+                <p>{{team.age}}</p>
+                <p>{{team.MBTI}}</p>
+                <p>🥘{{team.Food}}</p>
+                <p>{{team.hobby}}</p>
+            </div>
+        {% endfor %}
+    </div>
+    
+</body>
+</html>
